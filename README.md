@@ -29,6 +29,7 @@ The project combines a modern and intuitive frontend interface with **Flask-base
 ![Expense Tracker Dark Mode](./screenshots/dark-mode.png)
 
 **Fig 2:** Expense Tracker displaying the clean interface in Dark Mode.
+
 ---
 
 ## 🎯 Project Objectives
