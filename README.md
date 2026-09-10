@@ -2,7 +2,7 @@
 
 ### 📊 Full-Stack Web Application for Personal Expense Management
 
-A clean and responsive web application designed to record, track, and manage daily expenses using **Python Flask, SQLite, HTML, CSS, and JavaScript**.
+A clean and responsive web application designed to record, track, and manage daily expenses using **Python, Flask, SQLite, HTML5, CSS3, and JavaScript**.
 
 ---
 
@@ -22,17 +22,17 @@ The project combines a modern and intuitive frontend interface with **Flask-base
 
 ![Expense Tracker Light Mode](./screenshots/light-mode.png)
 
-*Fig1: Expense Tracker displaying recorded expenses with updated spending statistics*
+*Expense Tracker displaying recorded expenses with updated spending statistics.*
 
 ### 🌙 Dark Mode — Clean & Minimal Interface
 
 ![Expense Tracker Dark Mode](./screenshots/dark-mode.png)
 
-*Fig2: Expense Tracker displaying the clean interface in Dark Mode*
+*Expense Tracker displaying the clean interface in Dark Mode.*
 
 ---
 
-# 🎯 Project Objectives
+## 🎯 Project Objectives
 
 - 💰 Record and manage daily expenses
 - 📝 Store expense name, amount, and date
@@ -48,9 +48,9 @@ The project combines a modern and intuitive frontend interface with **Flask-base
 
 ---
 
-# 📊 Application Features
+## 📊 Application Features
 
-## ➕ Expense Management
+### ➕ Expense Management
 
 Users can add a new expense by entering:
 
@@ -60,9 +60,7 @@ Users can add a new expense by entering:
 
 After submitting the form, the expense is stored and displayed in the **Expense History** section.
 
----
-
-## 💰 Spending Overview
+### 💰 Spending Overview
 
 The application provides three important statistics:
 
@@ -70,29 +68,21 @@ The application provides three important statistics:
 - 🔢 **Total Transactions** — Displays the number of recorded expenses.
 - 📊 **Average Expense** — Displays the average amount spent per transaction.
 
----
-
-## 📋 Expense History
+### 📋 Expense History
 
 All recorded expenses are displayed in the **Expense History** section.
 
 This allows users to review their previously added transactions directly from the application interface.
 
----
-
-## ☀️ Light Mode
+### ☀️ Light Mode
 
 A clean and bright interface designed for comfortable daytime usage with clear visibility of expense information.
 
----
-
-## 🌙 Dark Mode
+### 🌙 Dark Mode
 
 A dark-themed interface that provides an alternative viewing experience, particularly useful in low-light environments.
 
----
-
-## 💾 SQLite Database
+### 💾 SQLite Database
 
 The application uses **SQLite** for local and persistent storage of expense records.
 
@@ -100,7 +90,7 @@ SQLite keeps the project lightweight while providing reliable database functiona
 
 ---
 
-# 🛠️ Tools & Technologies Used
+## 🛠️ Tools & Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -113,9 +103,8 @@ SQLite keeps the project lightweight while providing reliable database functiona
 
 ---
 
-# 🏗️ Application Architecture
+## 🏗️ Application Architecture
 
-```text
                     👤 User
                        ↓
              🧱 HTML / CSS / JavaScript
@@ -128,281 +117,213 @@ SQLite keeps the project lightweight while providing reliable database functiona
                        ↓
           📊 Updated Statistics & History
 
+---
+
+## 📂 Project Structure
+
+    expense-tracker/
+    ├── app.py
+    ├── expenses.db
+    ├── templates/
+    │   └── index.html
+    ├── static/
+    │   ├── style.css
+    │   └── script.js
+    ├── screenshots/
+    │   ├── light-mode.png
+    │   └── dark-mode.png
+    ├── .gitignore
+    ├── LICENSE
+    ├── README.md
+    └── requirements.txt
 
 ---
 
-📂 Project Structure
+## ⚙️ How to Develop
 
-expense-tracker/
-│
-├── app.py
-│
-├── expenses.db
-│
-├── templates/
-│   └── index.html
-│
-├── static/
-│   ├── style.css
-│   └── script.js
-│
-├── screenshots/
-│   ├── light-mode.png
-│   └── dark-mode.png
-│
-├── .gitignore
-├── LICENSE
-├── README.md
-└── requirements.txt
+### 1. Clone Repository
 
-> Note: The exact file structure may vary depending on the final project implementation.
+    git clone https://github.com/aakashnath/expense-tracker.git
 
+### 2. Navigate to Project Directory
 
+    cd expense-tracker
 
+### 3. Create Virtual Environment
 
----
+    python -m venv venv
 
-⚙️ How to Develop
+### 4. Activate Virtual Environment on Windows
 
-1️⃣ Clone the Repository
+    venv\Scripts\activate
 
-git clone https://github.com/aakashnath/expense-tracker.git
+### 5. Install Dependencies
 
-2️⃣ Navigate to the Project Directory
+    pip install -r requirements.txt
 
-cd expense-tracker
+If `requirements.txt` is not available, Flask can be installed using:
 
-3️⃣ Create a Virtual Environment
+    pip install flask
 
-Windows
+### 6. Run Application
 
-python -m venv venv
-
-Activate the Virtual Environment
-
-venv\Scripts\activate
-
-
----
-
-4️⃣ Install Dependencies
-
-pip install -r requirements.txt
-
-If requirements.txt is not available, Flask can be installed using:
-
-pip install flask
-
-
----
-
-5️⃣ Run the Application
-
-python app.py
+    python app.py
 
 The Flask development server will start locally.
 
-Open the application in your browser:
+### 7. Open the Application
 
-http://127.0.0.1:5000
+Open the following address in your web browser:
 
+    http://127.0.0.1:5000
 
 ---
 
-🚀 How to Use
+## 🚀 How to Use
 
-Step 1 — Open the Application
+### 1. Open Application
 
 Run the Flask application and open the local URL in a web browser.
 
-Step 2 — Add an Expense
+### 2. Add Expense
 
-Enter:
+Enter the following information:
 
-Expense Name
+- Expense Name
+- Amount
+- Date
 
-Amount
+Then click the **Add Expense** button.
 
-Date
-
-
-Then click the Add Expense button.
-
-Step 3 — View Statistics
+### 3. View Spending Statistics
 
 The dashboard automatically displays:
 
-💰 Total Expense
+- 💰 Total Expense
+- 🔢 Total Transactions
+- 📊 Average Expense
 
-🔢 Total Transactions
+### 4. Check Expense History
 
-📊 Average Expense
+Previously added expenses can be viewed in the **Expense History** section.
 
-
-Step 4 — Check Expense History
-
-Previously added expenses can be viewed in the Expense History section.
-
-Step 5 — Switch Interface Mode
+### 5. Switch Between Light Mode and Dark Mode
 
 Use the theme control to switch between:
 
-☀️ Light Mode
-
-🌙 Dark Mode
-
-
+- ☀️ Light Mode
+- 🌙 Dark Mode
 
 ---
 
-💡 Key Highlights
+## 💡 Key Highlights
 
-🐍 Flask-based web application
-
-🗄️ SQLite database integration
-
-📊 Automatic expense calculations
-
-📋 Expense history management
-
-☀️ Light and Dark Mode
-
-📱 Responsive user interface
-
-⚡ Lightweight and easy to run locally
-
-🎨 Modern and clean frontend design
-
-
+- 🐍 Flask-based web application
+- 🗄️ SQLite database integration
+- 📊 Automatic expense calculations
+- 📋 Expense history management
+- ☀️ Light and Dark Mode
+- 📱 Responsive user interface
+- ⚡ Lightweight and easy to run locally
+- 🎨 Modern and clean frontend design
 
 ---
 
-🔐 Data & Privacy
+## 🔐 Data & Privacy
 
 The application stores expense records locally using SQLite.
 
 No external financial service or payment system is connected to this project.
 
-
 ---
 
-📈 Future Improvements
+## 📈 Future Improvements
 
 The project can be further enhanced with features such as:
 
-📊 Expense category-wise analysis
-
-📅 Monthly and yearly spending reports
-
-📈 Expense charts and visual analytics
-
-🔍 Search and filtering
-
-✏️ Edit existing expenses
-
-🗑️ Delete individual expenses
-
-📤 Export expenses to CSV or Excel
-
-🔐 User authentication
-
-☁️ Cloud database integration
-
-📱 Improved mobile responsiveness
-
-
+- 📊 Expense category-wise analysis
+- 📅 Monthly and yearly spending reports
+- 📈 Expense charts and visual analytics
+- 🔍 Search and filtering
+- ✏️ Edit existing expenses
+- 🗑️ Delete individual expenses
+- 📤 Export expenses to CSV or Excel
+- 🔐 User authentication
+- ☁️ Cloud database integration
+- 📱 Improved mobile responsiveness
 
 ---
 
-🎓 Learning Outcomes
+## 🎓 Learning Outcomes
 
 Through this project, the following practical concepts were implemented:
 
-🐍 Python programming
-
-🌐 Flask web development
-
-🗄️ SQLite database integration
-
-🔗 Frontend-backend communication
-
-🧱 HTML structure
-
-🎨 CSS styling
-
-⚡ JavaScript interactions
-
-📊 Data calculation and presentation
-
-🗂️ Project organization
-
-🔧 Virtual environment management
-
-🐙 Git and GitHub version control
-
-
+- 🐍 Python programming
+- 🌐 Flask web development
+- 🗄️ SQLite database integration
+- 🔗 Frontend-backend communication
+- 🧱 HTML structure
+- 🎨 CSS styling
+- ⚡ JavaScript interactions
+- 📊 Data calculation and presentation
+- 🗂️ Project organization
+- 🔧 Virtual environment management
+- 🐙 Git and GitHub version control
 
 ---
 
-📁 Repository Contents
+## 📁 Repository Contents
 
-🐍 app.py — Flask application and backend logic
-
-🧱 index.html — Application interface
-
-🎨 style.css — Application styling
-
-⚡ script.js — Client-side interactions
-
-🗄️ expenses.db — SQLite database
-
-📄 requirements.txt — Python dependencies
-
-🖼️ light-mode.png — Light Mode application preview
-
-🌙 dark-mode.png — Dark Mode application preview
-
-📘 README.md — Project documentation
-
-⚖️ LICENSE — MIT License
-
-
+- 🐍 `app.py` — Flask application and backend logic
+- 🗄️ `expenses.db` — SQLite database
+- 🧱 `templates/index.html` — Application interface
+- 🎨 `static/style.css` — Application styling
+- ⚡ `static/script.js` — Client-side interactions
+- 🖼️ `screenshots/light-mode.png` — Light Mode application preview
+- 🌙 `screenshots/dark-mode.png` — Dark Mode application preview
+- 📄 `requirements.txt` — Python dependencies
+- 📘 `README.md` — Project documentation
+- ⚖️ `LICENSE` — MIT License
+- 🚫 `.gitignore` — Git ignored files configuration
 
 ---
 
-👨‍💻 Developed By
+## 👨‍💻 Developed By
 
-Aakash Nath
+**Aakash Nath**
 
-💻 B.Tech — Information Technology
+**B.Tech — Information Technology**
 
 📧 Email: nathaakash855@gmail.com
 
 💼 LinkedIn: https://linkedin.com/in/aakashnath2003
 
-
 ---
 
-🔗 GitHub Repository
+## 🔗 GitHub Repository
 
 https://github.com/aakashnath/expense-tracker
 
-
 ---
 
-⚖️ License
+## ⚖️ License
+
+**MIT License**
 
 This project is licensed under the MIT License.
 
 You are free to use, modify, and distribute this project in accordance with the terms of the license.
 
-See the LICENSE file for more information.
-
+See the `LICENSE` file for more information.
 
 ---
 
-⭐ Support
+## ⭐ Support
 
-If you found this project useful or interesting, consider giving the repository a ⭐ Star on GitHub.
+If you found this project useful or interesting, consider giving the repository a ⭐ **Star** on GitHub.
 
-Thank you for checking out the Expense Tracker! 💰
+Thank you for checking out the **Expense Tracker**! 💰
+
+If you found this project useful or interesting, consider giving the repository a ⭐ **Star** on GitHub.
+
+Thank you for checking out the **Expense Tracker**! 💰
