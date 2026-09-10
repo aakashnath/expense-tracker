@@ -22,14 +22,13 @@ The project combines a modern and intuitive frontend interface with **Flask-base
 
 ![Expense Tracker Light Mode](./screenshots/light-mode.png)
 
-*Expense Tracker displaying recorded expenses with updated spending statistics.*
+**Fig 1:** Expense Tracker displaying recorded expenses with updated spending statistics.
 
 ### 🌙 Dark Mode — Clean & Minimal Interface
 
 ![Expense Tracker Dark Mode](./screenshots/dark-mode.png)
 
-*Expense Tracker displaying the clean interface in Dark Mode.*
-
+**Fig 2:** Expense Tracker displaying the clean interface in Dark Mode.
 ---
 
 ## 🎯 Project Objectives
@@ -319,10 +318,6 @@ See the `LICENSE` file for more information.
 ---
 
 ## ⭐ Support
-
-If you found this project useful or interesting, consider giving the repository a ⭐ **Star** on GitHub.
-
-Thank you for checking out the **Expense Tracker**! 💰
 
 If you found this project useful or interesting, consider giving the repository a ⭐ **Star** on GitHub.
 
